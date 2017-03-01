@@ -31,3 +31,16 @@ int proffit(int x,int z){
          if ((z > 240) && (z <= 365)) 
         cashback*=1.12;
     }
+    	else
+	{
+		if ((z > 0) && (z <= 30)) 
+        cashback*=0.9;
+        if ((z > 30) && (z <= 120)) 
+        cashback*=1.03;
+        if ((z > 120) && (z <= 240)) 
+        cashback*=1.08;
+         if ((z > 240) && (z <= 365)) 
+        cashback*=1.15;
+	}
+return cashback;
+}
