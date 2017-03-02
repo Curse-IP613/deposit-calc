@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int proffit(int x,int z);
+float proffit(int x,int z);
 
 int main()
 {
@@ -18,7 +18,7 @@ int main()
     }
     return 0;
 }
-int proffit(int x,int z){
+float proffit(int x,int z){
 	int cashback=x;
 	if(x<100000)
 	{
