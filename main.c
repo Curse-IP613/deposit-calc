@@ -15,6 +15,10 @@ int main()
 	  {
 	 	printf("sum at the end of: ");
         printf("%.0f",proffit(s,t));
+	printf("\n");
+
+	printf("Doxod: ");
+	printf("%0.2f" ,proffit(s,t)-s);
           }
     return 0;
 }
@@ -42,5 +46,6 @@ float proffit(int x,int z){
                 if ((z > 240) && (z <= 365)) 
         cashback*=1.15;
 	}
+
 return cashback;
 }
