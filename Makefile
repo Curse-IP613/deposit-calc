@@ -1,5 +1,5 @@
 CFLAGS = -Wall -Werror -MP -MMD -std=c99
-.PH: clean all deposit-calc test
+.PHONY: clean all deposit-calc test
 
 all :
 	make bin/deposit-calc
@@ -13,7 +13,7 @@ build/main.o : src/main.c src/deposit.h
 build/deposit.o : src/deposit.c src/deposit.h
 	gcc -c src/deposit.c -o build/deposit.o $(CFLAGS)
 	
-test:
+test :
 	make bin/deposit-calc-test
 	bin/deposit-calc-test
 
