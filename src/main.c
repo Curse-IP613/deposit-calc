@@ -17,6 +17,7 @@ int main()
     }
     printf("Doxod: ");
     printf("%0.2f", profit(s, t) - s);
+    return 0;
 }
        
 
