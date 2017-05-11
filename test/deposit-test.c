@@ -54,7 +54,7 @@ CTEST(test_days366_sum10001, dataent)
 CTEST(test_day1_sum10000, to_profit)
 {	
 	// When
-    int result = profit (1,10000);
+    int result = profit (10000,1);
 
     // Then
     int expected = 9000;
@@ -74,7 +74,7 @@ CTEST(test_sum10000days30, to_profit)
 CTEST(test_30days_sum100000, to_profit)
 {
 	// When
-    int result = profit (30,100000);
+    int result = profit (100000,30);
 
     // Then
     int expected = 90000;
@@ -84,7 +84,7 @@ CTEST(test_30days_sum100000, to_profit)
 CTEST(test_31days_sum10000, to_profit)
 {
 	// When
-    int result = profit (31,10000);
+    int result = profit (10000,31);
 
     // Then
     int expected = 10200;
@@ -94,7 +94,7 @@ CTEST(test_31days_sum10000, to_profit)
 CTEST(test_241days_sum10000, to_profit)
 {
 	// When
-    int result = profit (241,10000);
+    int result = profit (10000,241);
 
     // Then
     int expected = 11200;
@@ -104,19 +104,19 @@ CTEST(test_241days_sum10000, to_profit)
 CTEST(test_241days_sum100000, to_profit)
 {
 	// When
-    int result = profit (241,100000);
+    int result = profit (100000,241);
 
     // Then
-    int expected = 115000;
+    int expected = 114999;
     ASSERT_EQUAL(expected, result);
 }
 ////*********************************////
 CTEST(test_241days_sum110000, to_profit)
 {
 	// When
-    int result = profit (365,110000);
+    int result = profit (110000,365);
 
     // Then
-    int expected = 126500;
+    int expected = 126499;
     ASSERT_EQUAL(expected, result);
 }
