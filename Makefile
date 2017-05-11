@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Werror -MP -MMD -std=c99
+CFLAGS = -Wall -Werror -MP -MMD 
 .PHONY: clean all deposit-calc test
 
 all :
